@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-clr);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-clr);
+    -webkit-border-radius: 20px;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--text1-clr);
+    border: 2rem solid var(--text3-clr);
+    -webkit-border-radius: 20px;
+    border-radius: 1rem;
+}
+
+.light-theme {
+    /* --primary-clr: #6D3DC8; */
+    /* --primary-clr:#9333EA; */
+    --primary-clr:#1345e5;
+    --light-p-clr:#F3F3FE;
+    --secondary-clr: #ed339f;
+    --tertiary-clr: #9CA3AF;
+    --bg-clr: #FFFFFF;
+    --shadow-clr: #c1c3c2;
+    --text1-clr: #0d1028;
+    --text2-clr: #fff;
+    --text3-clr: #e0dbe5;
+    --lg: linear-gradient(to right, #1345e5 0%, #ed339f 51%, #1345e5 100%);
+    --lg2: linear-gradient(90deg, #1345e5 0%, #ed339f 51%);
+    --box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    --transition: all .4s ease;
+}
+
+.dark-theme {
+    /* --primary-clr: #6D3DC8; */
+    /* --primary-clr:#9333EA; */
+    --primary-clr:#1345e5;
+    --light-p-clr:#1c2331;
+    --secondary-clr: #ed339f;
+    --tertiary-clr: #9CA3AF;
+    --bg-clr: #111827;
+    --shadow-clr: #010a10;
+    --text1-clr: #fff;
+    --text2-clr: #111827;
+    --text3-clr: #2e2e2f;
+    --lg: linear-gradient(to right, #1345e5 0%, #ed339f 51%, #1345e5 100%);
+    --lg2: linear-gradient(90deg, #1345e5 0%, #ed339f 51%);
+    --box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    --transition: all .4s ease;
+}
+
+.btn {
+    height: 3rem;
+    width: 10rem;
+    font-weight: 700;
+    background: var(--lg);
+    color: var(--text2-clr);
+    background-size: 200% auto;
+    border: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: .3rem;
+}
+
+.btn:hover {
+    background-position: right center;
+}
+
+.btnbtn{
+    color: var(--text2-clr); 
+}

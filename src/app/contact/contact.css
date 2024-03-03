@@ -1,0 +1,42 @@
+.contact{
+    margin-top: 8rem;
+    overflow: hidden;
+}
+.contact h1{
+    color: var(--primary-clr);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.contact p{
+    text-align: center;
+    color: var(--tertiary-clr);
+}
+.contact form{
+    text-align: center;
+    margin: 1.5rem auto;
+    max-width: 55rem;
+}
+.contact form input,
+.contact form textarea{
+    display: grid;
+    width: 100%;
+    color: var(--text1-clr);
+    background-color: var(--light-p-clr);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+ 
+}
+.contact form textarea{
+    resize: none;
+}
+@media (max-width:998px){
+    textarea{
+        height: 10rem;
+    }
+    .contact form{
+        margin: 1rem;
+    }
+}
